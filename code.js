@@ -19,10 +19,15 @@ function foo() {
 //     }
 // }
 
-const sayHello = function(input) {
-    return "Hello, " + input + "!";
-}
 
+
+const sayHello = function(input) {
+    if (typeof input !== "string") {
+        return "Hello, World!";
+    } else {
+        return "Hello, " + input + "!";
+    }
+};
 
 
 

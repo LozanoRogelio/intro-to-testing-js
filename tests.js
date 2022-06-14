@@ -22,7 +22,7 @@ describe("foo", function () {
     });
 });
 
-
+// sayHello function tests
 describe('sayHello', function() {
     it('should be a defined function', function () {
         expect(typeof sayHello).toBe("function");
@@ -34,9 +34,18 @@ describe('sayHello', function() {
         expect(sayHello("Jane")).toBe("Hello, Jane!");
     });
     it('sayHello("Alex") should return "Hello, Alex!"', function () {
-        expect(sayHello("Alex")).toBe("Hello, Alex!")
+        expect(sayHello("Alex")).toBe("Hello, Alex!");
     });
     it('sayHello("Pat") should return "Hello, Pat!"', function () {
-        expect(sayHello("Pat")).toBe("Hello, Pat!")
-    })
+        expect(sayHello("Pat")).toBe("Hello, Pat!");
+    });
+    it('sayHello() should return "Hello, World!"', function () {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it('sayHello() should return "Hello, World!"', function () {
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it('sayHello() should return "Hello, World!"', function () {
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
 });
